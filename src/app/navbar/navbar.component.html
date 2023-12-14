@@ -1,0 +1,20 @@
+<!-- app.component.html (or your main navigation component) -->
+
+<div class="app-heading-container">
+  <span class="app-heading">BlogApp</span>
+</div>
+
+<div class="navbar bg-light">
+  <div class="center-content">
+    <a routerLink="/getAllBlogs">Home</a>
+    <a routerLink="/create-blog">Create Blog</a>
+  </div>
+  <div class="right-corner">
+    <a mat-flat-button *ngIf="!isLoggedIn" color="primary" [routerLink]="['/login']">Login</a>
+    <a mat-flat-button *ngIf="!isLoggedIn" color="primary" [routerLink]="['/signup']">SignUp</a>
+    <span *ngIf="isLoggedIn">
+      <span>Welcome {{ loggedinUser }}</span>
+      <a mat-flat-button color="primary" (click)="onLogout()">Logout</a>
+    </span>
+  </div>
+</div>

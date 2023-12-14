@@ -1,0 +1,36 @@
+/* Add this to your global styles (styles.css or styles.scss) */
+
+.app-heading-container {
+  text-align: center;
+  padding: 10px;
+}
+
+.app-heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.center-content a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #212529; /* Dark text color */
+}
+
+.right-corner {
+  display: flex;
+  align-items: center;
+}
+
+.right-corner a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007bff; /* Primary color for links */
+}
